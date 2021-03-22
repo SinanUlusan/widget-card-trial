@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', 'Courier', 'monospace', sans-serif;
+    background-color: var(--light-grayish-blue);
+    overflow: hidden;
+}
+
+.article-preview {
+    width: 730px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+.article-preview .article-container {
+    width: 730px;
+    height: 280px;
+    display: flex;
+    justify-content: flex-start;
+    background: white;
+    border-radius: 10px;
+    margin-top: 280px;
+}
+.article-container .article-left {
+    width: 414.66px;
+    height: 331.72px;
+    display: flex;
+    align-items:stretch;
+    justify-content: flex-start;
+}
+
+.article-container .article-left img{
+    width: 276px;
+    height: 280px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.article-container .article-right {
+    text-align: left;
+    width: 500px;
+    height: 227px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.article-content {
+    width: 373.56px;
+    height: 56px;
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+}
+
+.article-content .article-heading {
+    width: 373.56px;
+    height: 59px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+    margin-bottom: 2.5rem;
+}
+
+.article-content .article-text {
+    color: var(--desaturated-dark-blue);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.share-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.share-profile .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.profile-container .profile-info p {
+    padding-left: 1rem;
+    line-height: 1.5;
+}
+
+.profile-info .profile-name {
+    font-size: 14px;
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+}
+
+.profile-info .profile-text {
+    color: var(--desaturated-dark-blue);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.share-profile-btn img{
+    text-align: right;
+    border-radius: 50%;
+    padding: 0.75rem;
+    background: var(--light-grayish-blue);
+    margin-left: 9rem;
+    cursor: pointer;
+}
+
+.profile-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 760px) {
+    .article-preview {
+        width: 327px;
+        height: 515px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .article-preview .article-container {
+        width: 327px;
+        height: 515px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background: white;
+        border-radius: 10px;
+        margin-top: 280px;
+        position: relative;
+    }
+    .article-container .article-left {
+        width: 327px;
+        height: 204px;
+        position: absolute;
+    }
+
+    .article-container .article-left img {
+        width: 327px;
+        height: 261.59px;
+    }
+    .article-container .article-right {
+        width: 327px;
+        height: 246px;
+        position: relative;
+    }
+
+    .article-right .article-content {
+        width: 277px;
+        height: 168px;
+        margin: 35px 25px 18px 25px;
+        position: absolute;
+        top: 250px;
+    }
+
+    .article-content .article-heading {
+        width: 277px;
+        height: 72px;
+        font-size: 17px;
+    }
+
+    .article-content .article-text {
+        position: relative;
+        bottom: 20px;
+    }
+    
+    .share-profile {
+        position: relative;
+        width: 327px;
+        height: 60px;
+        top: 360px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 1rem;
+    }
+    .share-profile .profile-container {
+        width: 247px;
+        height: 40px;
+    }
+
+    .profile-info .profile-name {
+        font-size: 10px;
+    }
+
+    .share-profile-btn img {
+        margin-left: 0;
+    }
+
+}
